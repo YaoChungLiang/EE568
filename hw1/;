@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import cv2
+import numpy as np
+
+def p2():    
+    img=cv2.imread('./1_4.bmp')
+    cv2.imshow("Lady M",img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+    # a
+    print(type(img))
+    #b
+    img.astype(float)
+    cv2.imshow("Lady M",img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    
+
+
+if __name__ == "__main__":
+    p2()
